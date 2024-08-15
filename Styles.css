@@ -226,7 +226,7 @@ header{
 /* Banner */
 
 .banner {
-  background-image: linear-gradient(#00000080, #00000000), url(Imagenes/Img1.jpg);
+  background-image: linear-gradient(#00000080, #00000000), url(Imagenes/Web-p/Img1.webp);
   height: 60rem;
   /* width: 100rem; */
   background-size: cover;
@@ -623,7 +623,7 @@ header{
 .gallery{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 30rem);
+  /* grid-template-rows: repeat(2, 30rem); */
   gap: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -659,11 +659,14 @@ header{
 .container-blogs{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .card-blog{
-  display: flex;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: .5rem;
+  display: grid;
   flex-direction: column;
   gap: 2rem;
 }
@@ -673,6 +676,12 @@ header{
   cursor: pointer;
   position: relative;
   overflow: hidden;
+}
+
+.container-img img{
+  height: 180px;
+  /* width: 150px; */
+  object-fit: cover;
 }
 
 .button-group-blog{
