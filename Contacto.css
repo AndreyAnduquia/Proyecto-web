@@ -225,14 +225,13 @@ header{
 
 /* Formulario Contacto */
 
-/* Contenedor para centrar el formulario */
 .contacto-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el alto de la ventana */
+    min-height: 100vh; 
     padding: 2rem;
-    background-color: var(--primary-color); /* Puedes ajustar esto si no deseas un fondo */
+    background-color: var(--primary-color); 
 }
 
 .contacto-form {
