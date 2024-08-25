@@ -3,80 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos-contacto.css">
-    <title>Que hay pa comer</title>
+    <link rel="stylesheet" href="Contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Contactanos</title>
 </head>
-<body> 
-  <header>
-    <div class="container-hero">
-      <div class="container hero">
-        <div class="customer-support">
-          <i class="fa-solid fa-headset"></i>
-          <div class="content-customer support">
-            <span class="text">Soporte al cliente</span>
-            <span class="number">3053571219</span>
-          </div>
-        </div>
+<body>
+    
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">3053571219</span>
+                    </div>
+                </div>
 
-        <div class="container-logo">
-          <i class="fa-solid fa-burger"></i>
-          <h1 class="logo">Que hay pa comer</h1>
-        </div>
+                <div class="container-logo">
+                    <i class="fa-solid fa-burger"></i>
+                    <h1 class="logo">Que hay pa comer</h1>
+                </div>
 
-        <div class="container-user">
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <div class="content-shopping-cart">
-            <span class="text">Carrito</span>
-            <span class="number">(0)</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-navbar">
-      <nav class="container navbar">
-        <i class="fa-solid fa-bars"></i>
-        <ul class="menu">
-          <li><a href="index.html">Menu</a></li>
-          <li><a href="#">Combos</a></li>
-          <li><a href="#">Promociones</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
-          <li><a href="#">Nuestra sede</a></li>
-        </ul>
-
-        <form class="search-form">
-          <input type="search" placeholder="Buscar...." />
-          <button class="btn-search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-      </nav>
-    </div>
-  </header>
-
-    <form action="https://formsubmit.co/andreyaap2003@gmail.com" method="POST" >
-        <h2>Contacto</h2>
-        <div class="input-group">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
-            <label class="phone">Telefono</label>
-            <input type="tel" name="phone" id="phone" placeholder="Telefono">
-            <label class="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email">
-            <label class="messege">Mensaje</label>
-            <textarea name="messege" id="messege" cols="30" rows="5" placeholder="Mensaje"></textarea>
-            <div class="form-txt">
-                <a href="#">Politica de Privacidad</a>
-                <a href="#">Terminos y condiciones</a>
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
             </div>
-            <input class="btn"  type="submit" value="Enviar">
-
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-            <input type="hidden" name="_captcha" value="false">
         </div>
-    </form>
 
+        <div class="container-navbar">
+            <nav class="container navbar">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="#">Combos</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="#">Nuestra sede</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor para centrar el formulario -->
+    <div class="contacto-container">
+        <div class="contacto-form">
+            <form action="https://formsubmit.co/andreyaap2003@gmail.com" method="post">
+                <h2>Contacto</h2>
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre...">
+                    <label for="phone">Numero</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono...">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="Email...">
+                    <label for="messege">Mensaje</label>
+                    <textarea name="messege" id="messege" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    <div class="form-text">
+                        <a href="#">Politica de privacidad</a>
+                        <a href="#">Termino y condiciones</a>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container container-footer">
+          <div class="menu-footer">
+            <div class="contact-info">
+              <p class="title-footer">Informacion de contacto</p>
+              <ul>
+                <li>Direccion: Carrera 8 i # 147-06 El salado</li>
+                <li>Telefono: 123-456-789</li>
+                <li>Fax: 5553201511</li>
+                <li>Email: Quehaypacomer@support.com</li>
+              </ul>
+              <div class="social-icons">
+                <span  class="pinterest"> <i class="fa-brands fa-pinterest"></i> </span>
+                <span class="facebook"> <i class="fa-brands fa-facebook-f"></i> </span>
+                <span class="youtube"> <i class="fa-brands fa-youtube"></i> </span>
+                <span class="twitter"> <i class="fa-brands fa-twitter"></i> </span>
+                <span class="instagram"> <i class="fa-brands fa-instagram"></i> </span>
+              </div>
+            </div>
+  
+            <div class="information">
+              <p class="title-footer">Informacion</p>
+              <ul>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#">Informacion Delivery</a></li>
+                <li><a href="#">Politicas de Privacidad</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Contactanos</a></li>
+              </ul>
+            </div>
+  
+            <div class="my-account">
+              <p class="title-footer">Mi cuenta</p>
+              <ul>
+                <li><a href="#">Mi cuenta</a></li>
+                <li><a href="#">Historial de ordenes</a></li>
+                <li><a href="#">Lista de deseos</a></li>
+                <li><a href="#">Boletin</a></li>
+                <li><a href="#">Reembolsos</a></li>
+              </ul>
+            </div>
+  
+            <div class="netletters">
+              <p class="title-footer">Boletin Informativo</p>
+              <div class="content">
+                <p>
+                  Suscribete a nuestros boletines ahora y mentente al dia con 
+                  nuestras colaboraciones y exclusivas
+                </p>
+                <input type="email" placeholder="Ingrese el correo aqui...">
+                <button>Suscribete</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="copyright">
+            <p>
+              Desarrollado por Andrey Anduquia &copy; 2024
+            </p>
+  
+            <!-- <img src="Imagenes/Pago1.png" alt="pagos">
+            <img src="Imagenes/pago2.png" alt="pagos">
+            <img src="Imagenes/pago3.png" alt="pagos">
+            <img src="Imagenes/pago4.png" alt="pagos"> -->
+          </div>
+        </div>
+      </footer>
 
 </body>
 </html>
