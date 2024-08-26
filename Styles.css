@@ -226,16 +226,26 @@ header{
 /* Banner */
 
 .banner {
-  background-image: linear-gradient(#00000080, #00000000), url('https://scontent.feoh3-1.fna.fbcdn.net/v/t1.6435-9/81973149_153858869360547_3830588053202665472_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=TgYyBDnxZPIQ7kNvgGFG5zz&_nc_ht=scontent.feoh3-1.fna&oh=00_AYBAyFNX4OX5M8aFNUOINv29gj2Tl0Id2237rcv2iMFA_A&oe=66F40BE1');
   height: 60rem;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+}
+
+.banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  transform: scaleX(-1);
 }
 
 .content-banner {
   max-width: 90rem;
-  margin: 0 auto;
   padding: 20rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-banner p {
