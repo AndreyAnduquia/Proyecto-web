@@ -226,6 +226,10 @@ header{
 /* Formulario Contacto */
 
 .contacto-container {
+  background-image: url('https://scontent.feoh3-1.fna.fbcdn.net/v/t1.6435-9/81973149_153858869360547_3830588053202665472_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=TgYyBDnxZPIQ7kNvgGFG5zz&_nc_ht=scontent.feoh3-1.fna&oh=00_AYBAyFNX4OX5M8aFNUOINv29gj2Tl0Id2237rcv2iMFA_A&oe=66F40BE1');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,12 +239,15 @@ header{
 }
 
 .contacto-form {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px #fff;
+    padding: 50px 40px;
+    box-shadow: 0 0 20px #00000060;
+    border: 1px solid #fff;
     border-radius: 20px;
     text-align: center;
     width: 340px;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-color: #ffffff2a;
+    backdrop-filter: blur(4px);
 }
 
 .contacto-form h2 {
@@ -256,7 +263,7 @@ header{
 
 .input-group label {
     color: var(--color-letra);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -267,9 +274,11 @@ header{
     padding: 10px 15px;
     border-radius: 25px;
     margin-bottom: 15px;
-    background-color: var(--color-prueba);
+    background: #ffffff83;
+    /* background-color: var(--color-prueba); */
     border: 2px solid #fff;
-    color: var(--color-letra);
+    
+    /* color: var(--color-letra); */
     outline: none;
 }
 
@@ -277,7 +286,10 @@ header{
     padding: 12px 15px;
     border-radius: 25px;
     margin-bottom: 20px;
-    background-color: var(--color-prueba);
+    background: #ffffff83;
+    resize: none;
+
+    /* background-color: var(--color-prueba); */
     border: 2px solid #fff;
     color: var(--color-letra);
     outline: none;
@@ -295,17 +307,19 @@ input::placeholder, textarea::placeholder {
 }
 
 .form-text a {
-    color: #76b28e;
+    color: var(--color-letra);
     font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
+    font-weight: 700;
+    /* text-decoration: none; */
 }
 
 .input-group input[type="submit"] { 
     padding: 10px 15px;
     border-radius: 25px;
     margin-bottom: 15px;
-    background-color: var(--color-prueba);
+    background: transparent;
+
+    /* background-color: var(--color-prueba); */
     border: 2px solid #fff;
     color: var(--color-letra);
     outline: none;
