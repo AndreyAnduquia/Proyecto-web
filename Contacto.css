@@ -291,7 +291,7 @@ header{
 
     /* background-color: var(--color-prueba); */
     border: 2px solid #fff;
-    color: var(--color-letra);
+    color: #000;
     outline: none;
 }
 
@@ -515,5 +515,10 @@ input::placeholder, textarea::placeholder {
 
     input { 
         padding: 15px;
+    }
+
+    .footer {
+      padding: 30px;
+      width: 50%;
     }
 }
