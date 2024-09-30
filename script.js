@@ -50,3 +50,17 @@ function getProducts() {
 }
 
 getProducts();
+
+const caja = document.querySelectorAll('.combos')
+const modal = document.getElementById('favDialog')
+const cancelButton = document.getElementById("cancel");
+
+caja.forEach((item) => {
+  item.addEventListener('click', () => {
+    modal.showModal()
+  })
+})
+
+cancelButton.addEventListener('click', () => {
+  modal.close()
+})
